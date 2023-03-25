@@ -3,8 +3,8 @@ export default class AddToCartButton {
         this.element = element;
     }
 
-    render(pizza) {
-        this.element.textContent = `Добавить в корзину за ${pizza.calculatePrice()} ₽ (${pizza.calculateCalories()} кКалл)`;
+    render(pizzaPrice, pizzaCalories) {
+        this.element.textContent = `Добавить в корзину за ${pizzaPrice}₽ (${pizzaCalories}кКалл)`;
         return this.element;
     }
 }
